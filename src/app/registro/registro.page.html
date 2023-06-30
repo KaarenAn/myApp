@@ -1,0 +1,83 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Informacion</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <form [formGroup]="formularioRegistro">
+        <ion-item>
+          <ion-label position="floating">Nombre</ion-label>
+          <ion-input formControlName="nombre"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input formControlName="password" type="password" ></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Confirmar contraseña</ion-label>
+          <ion-input formControlName="confirmacionPassword" type="password"></ion-input>
+        </ion-item>
+        <br>
+      </form>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Papeleria</ion-card-title>
+    </ion-card-header>
+  <ion-list>
+    <ion-item>
+      <ion-checkbox>Copia del Acta de Nacimiento</ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-checkbox>Copia de la Cartilla de Vacunacion(Actualizada)</ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-checkbox>2 Fotografias tamaño infantil</ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-checkbox>Examen Medico</ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-checkbox>Copia de la CURP</ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-checkbox>Constancia Escolar</ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-checkbox>Recibo de Nomina y Copia de la credencial escolar</ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-checkbox>Copia de comprobante de domicilio</ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-checkbox>Copia credencial de elector y CURP</ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-checkbox>2 Fotografias del padre</ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-checkbox>2 Fotografias de la madre</ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-checkbox>2 Fotografias del tutor</ion-checkbox>
+    </ion-item>
+  </ion-list>
+  </ion-card>
+</ion-content>
+<ion-toolbar color="primary">
+  <ion-buttons slot="end">
+    <ion-button [routerLink]="['/tab3']">Registrarse</ion-button>
+  </ion-buttons>
+</ion-toolbar>

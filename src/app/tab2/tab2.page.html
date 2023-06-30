@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+    <ion-toolbar color="mycolor">
+    <ion-title>
+      QR
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 2</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-item>
+    <ion-input label="Nombre de la persona" labelPlacement="floating" placeholder="Enter text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input label="Telefono" labelPlacement="floating" placeholder="Enter text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input label="Nombre del niño" labelPlacement="floating" placeholder="Enter text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input label="Nombre del Padre" labelPlacement="floating" placeholder="Enter text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input label="Salon" labelPlacement="floating" placeholder="Enter text"></ion-input>
+  </ion-item>
+
+  <ion-button [routerLink]="['/qr']">Generar QR</ion-button>
+
+</ion-content>
