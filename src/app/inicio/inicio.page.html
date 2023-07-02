@@ -1,18 +1,22 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>Estancia Infantil</ion-title>
+  <ion-toolbar class="verde" color="verde">
+    <ion-title >Estancia Infantil</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <div class="banner">
+    <img src="../imagenes/diseño.png" alt="">
+    
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Inicio</ion-title>
     </ion-toolbar>
   </ion-header>
+</div>
 </ion-content>
 <ion-grid>
   <ion-row>
-    <ion-button [routerLink]="['/login']">Iniciar</ion-button>
+    <button [routerLink]="['/login']" class="btn">Iniciar</button>
   </ion-row>
 </ion-grid>

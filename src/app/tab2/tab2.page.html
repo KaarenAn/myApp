@@ -1,8 +1,6 @@
 <ion-header [translucent]="true">
-    <ion-toolbar color="mycolor">
-    <ion-title>
-      QR
-    </ion-title>
+  <ion-toolbar color="rosa" class="rosa">
+    <ion-title> QR</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -29,6 +27,6 @@
     <ion-input label="Salon" labelPlacement="floating" placeholder="Enter text"></ion-input>
   </ion-item>
 
-  <ion-button [routerLink]="['/qr']">Generar QR</ion-button>
+  <button class="bt" [routerLink]="['/qr']">Generar QR</button>
 
 </ion-content>
