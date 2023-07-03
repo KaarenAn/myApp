@@ -7,11 +7,44 @@ ion-toolbar{
     padding: 20px 30px;
     border-radius: 15px;
     font-size: 20px;
+    margin-top: 250px;
+    margin-left: 615px;
 }
 ion-title{
-    position: center;
+    position: absolute;
+    left: 575px;
 }
 ion-content{
-    --background:
-    url(../imagenes/2.png) no-repeat center center / cover;
+    --background:url(../imagenes/diseño.png) no-repeat center center / cover;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+
+
+
+//esto es del apartado de celular mo que esta con @media se modifica con el mismo nombre de los estilos
+//para adaptarlo a celular
+@media (max-width: 800px) {
+ion-content{
+    --background:url(../imagenes/1.png) no-repeat center center / cover;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+.btn {
+    background-color: #8f8e8e;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 15px;
+    font-size: 20px;
+    margin-top: 175px;
+    margin-left: 85px;
+}
+ion-title{
+    position: absolute;
+    left: 50px;
+}
+
+
 }
