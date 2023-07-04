@@ -5,3 +5,16 @@
 .azul{
     background-color:#8f8e8e;
 }
+ion-content{
+    --background:url(../imagenes/uno.png) no-repeat center center / cover;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+@media (max-width: 800px) {
+    ion-content{
+        --background:url(../imagenes/1.png) no-repeat center center / cover;
+        margin-top: auto;
+        margin-bottom: auto;
+        
+    }
+}
