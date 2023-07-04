@@ -4,29 +4,25 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <ion-item>
-    <ion-input label="Nombre de la persona" labelPlacement="floating" placeholder="Enter text"></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-input label="Telefono" labelPlacement="floating" placeholder="Enter text"></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-input label="Nombre del niño" labelPlacement="floating" placeholder="Enter text"></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-input label="Nombre del Padre" labelPlacement="floating" placeholder="Enter text"></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-input label="Salon" labelPlacement="floating" placeholder="Enter text"></ion-input>
-  </ion-item>
-
-  <button class="bt" [routerLink]="['/qr']">Generar QR</button>
-
+  <ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Ingrese:</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+     
+      <ion-input label="Nombre de la persona" label-placement="floating" fill="outline" placeholder="Ingrese nombre de la persona"></ion-input>
+      <br />
+      <ion-input label="Nombre del niño" label-placement="floating" fill="outline" placeholder="Ingrese nombre del niño"></ion-input>
+      <br />
+      <ion-input label="Nombre del padre" label-placement="floating" fill="outline" placeholder="Ingrese nombre del padre"></ion-input>
+      <br />
+      <ion-input label="Telefono" label-placement="floating" fill="outline" placeholder="Ingrese telefono"></ion-input>
+      <br />
+      <ion-input label="Salon" label-placement="floating" fill="outline" placeholder="Ingrese salon"></ion-input>
+      <br />
+    </ion-card-content></ion-card>
+    <button class="bt" [routerLink]="['/qr']">Generar QR</button>
+  
 </ion-content>

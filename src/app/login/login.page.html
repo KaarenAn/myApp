@@ -11,14 +11,9 @@
     </ion-card-header>
     <ion-card-content>
       <form [formGroup]="formularioLogin">
-        <ion-item>
-          <ion-label position="floating">Nombre</ion-label>
-          <ion-input formControlName="nombre"></ion-input>
-        </ion-item>
-        <ion-item>
-          <ion-label position="floating">Contraseña</ion-label>
-          <ion-input formControlName="password" type="password"></ion-input>
-        </ion-item>
+        <ion-input label="Nombre" label-placement="floating" fill="solid" placeholder="Ingrese nombre"></ion-input>
+        <br/>
+        <ion-input label="Contraseña" label-placement="floating" fill="solid" placeholder="Ingrese contraseña"></ion-input>
       </form>
       <br>
         <ion-icon name="person-circle-outline" size="large" color="primary"></ion-icon>
