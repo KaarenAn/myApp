@@ -15,3 +15,32 @@ ion-toolbar{
         margin-left: 100px;
     }
 }
+
+.rosa1{
+    background-color: #8d5ba5;
+}
+ion-card-title.uno{
+    color: black;
+}
+ion-card-title.dos{
+    color: black;
+}
+ion-card-title.tres{
+    color: black;
+}
+
+ion-content{
+    --background:url(../imagenes/dos.png) no-repeat center center / cover;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+
+@media (max-width: 800px) {
+    ion-content{
+        --background:url(../imagenes/2.png) no-repeat center center / cover;
+        margin-top: auto;
+        margin-bottom: auto;
+        
+    }
+}
