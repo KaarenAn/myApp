@@ -10,7 +10,8 @@
         <ion-input label="Contraseña" label-placement="floating" fill="outline" ></ion-input>
       </form>
       <br>
-      <button class="btn" [routerLink]="['/tab1']">Iniciar Sesion</button>
+      <button class="btn" id="open-loading" [routerLink]="['/tab1']">Iniciar Sesion</button>
+      <ion-loading trigger="open-loading" message="Iniciando, por favor espera..." duration="3000"></ion-loading>
       <button class="btn2" [routerLink]="['/tab3']">Sesion Administrador</button>
 
     </ion-card-content>

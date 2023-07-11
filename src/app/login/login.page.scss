@@ -42,7 +42,7 @@ ion-icon{
         color: white;
         padding: 20px 30px;
         border-radius: 15px;
-        font-size: 15px;
+        font-size: auto;
         margin-left: 40px;
     }
     .btn2{
@@ -51,11 +51,11 @@ ion-icon{
         padding: 20px 30px;
         border-radius: 15px;
         font-size: 15px;
-        margin-left: 10px;
+        margin-left: auto;
         margin-top: 10px;
     }
     ion-icon{
-        margin-left: 70px;
+        margin-left: 90px;
         width: 100px;
     }
 }
