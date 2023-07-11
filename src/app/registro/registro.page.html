@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar color="login">
+  <ion-toolbar color="login" class="inicio">
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
@@ -49,7 +49,7 @@
       </ion-item>
       <br/>
     </ion-list>
-   
+
 
     <ion-card-header color="morado" class="rosa1">
       <ion-card-title class="dos" color="negro" >Ingrese:</ion-card-title>
@@ -136,7 +136,9 @@
 
 <ion-toolbar color="gris" class="rosa">
   <ion-buttons>
-    <ion-button class="btn" [routerLink]="['/tab3']">Registrar</ion-button>
+    <ion-button class="btn" id="open-loading" [routerLink]="['/tab3']">Registrar</ion-button>
+    <ion-loading trigger="open-loading" message="Registrando, por favor espera..." duration="3000"></ion-loading>
   </ion-buttons>
+  
 </ion-toolbar>
 

@@ -1,22 +1,15 @@
-<ion-header>
-  <ion-toolbar color="login">
-    <ion-title>Login</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
   <ion-card>
     <ion-card-header>
-      <ion-card-title>Login</ion-card-title>
+      <ion-icon name="person-circle-outline" color="login"></ion-icon>
     </ion-card-header>
     <ion-card-content>
       <form [formGroup]="formularioLogin">
-        <ion-input label="Nombre" label-placement="floating" fill="solid" placeholder="Ingrese nombre"></ion-input>
+        <ion-input label="Nombre" label-placement="floating" fill="outline"></ion-input>
         <br/>
-        <ion-input label="Contraseña" label-placement="floating" fill="solid" placeholder="Ingrese contraseña"></ion-input>
+        <ion-input label="Contraseña" label-placement="floating" fill="outline" ></ion-input>
       </form>
       <br>
-        <ion-icon name="person-circle-outline" size="large" color="login"></ion-icon>
       <button class="btn" [routerLink]="['/tab1']">Iniciar Sesion</button>
       <button class="btn2" [routerLink]="['/tab3']">Sesion Administrador</button>
 
