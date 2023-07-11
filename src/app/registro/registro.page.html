@@ -51,7 +51,7 @@
     </ion-list>
 
 
-    <ion-card-header color="morado" class="rosa1">
+    <ion-card-header color="morado" class="rosa2">
       <ion-card-title class="dos" color="negro" >Ingrese:</ion-card-title>
     </ion-card-header>
     <ion-card-content>
@@ -110,7 +110,7 @@
 
     </ion-card-content>
     
-    <ion-card-header color="morado" class="rosa1" >
+    <ion-card-header color="morado" class="rosa3" >
       <ion-card-title class="tres" color="negro" >Registro App</ion-card-title>
     </ion-card-header>
     <ion-card-content>
@@ -128,17 +128,13 @@
           <ion-label position="floating">Confirmar contraseña</ion-label>
           <ion-input formControlName="confirmacionPassword" type="password"></ion-input>
         </ion-item>
-        <br>
       </form>
     </ion-card-content>
   </ion-card>
-</ion-content>
 
-<ion-toolbar color="gris" class="rosa">
-  <ion-buttons>
-    <ion-button class="btn" id="open-loading" [routerLink]="['/tab3']">Registrar</ion-button>
+    <button class="btn" id="open-loading" [routerLink]="['/tab3']">Registrar</button>
     <ion-loading trigger="open-loading" message="Registrando, por favor espera..." duration="3000"></ion-loading>
-  </ion-buttons>
   
-</ion-toolbar>
+  </ion-content>
+
 
